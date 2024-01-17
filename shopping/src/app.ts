@@ -9,9 +9,9 @@ const app: Application = express();
 app.use(express.json());
 
 app.use("/", (req: Request, res: Response) => {
-  res.status(200).json({ message: "Customer Success" });
+  res.status(200).json({ message: "Shopping Success" });
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("Customer is listening on " + process.env.PORT);
+  console.log("Shopping is listening on " + process.env.PORT);
 });
